@@ -8,7 +8,7 @@ describe('POST /api/v1/login', () => {
     const res = await supertest(config.baseUrl)
       .post('/tasks/rest/doregister')
       .set('Accept', 'application/json')
-      .send({ email: 'aaa@gmail.com', password: 'test007' })
+      .send({ name: 'test007', email: 'aaa@gmail.com', password: 'test007' })
     expect(res.status).toEqual(200);
     
   })
